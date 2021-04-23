@@ -1,12 +1,12 @@
 {
-  "name": "attachmentgenie-example",
-  "version": "4.0.0",
+  "name": "attachmentgenie-statping",
+  "version": "1.0.0",
   "author": "bram vogelaar <bram@attachmentgenie.com>",
   "summary": "Setup example",
   "license": "MIT",
-  "source": "https://github.com/attachmentgenie/attachmentgenie-example.git",
-  "project_page": "https://github.com/attachmentgenie/attachmentgenie-example",
-  "issues_url": "https://github.com/attachmentgenie/attachmentgenie-example/issues",
+  "source": "https://github.com/attachmentgenie/attachmentgenie-statping.git",
+  "project_page": "https://github.com/attachmentgenie/attachmentgenie-statping",
+  "issues_url": "https://github.com/attachmentgenie/attachmentgenie-statping/issues",
   "dependencies": [
     {
       "name": "puppet-archive",
