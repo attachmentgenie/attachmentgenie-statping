@@ -1,56 +1,53 @@
-# Class to install example.
+# Class to install statping.
 #
 # @api private
-class example::install {
-  if $::example::manage_user {
-    user { 'example':
+class statping::install {
+  if $::statping::manage_user {
+    user { 'statping':
       ensure => present,
-      home   => $::example::install_dir,
-      name   => $::example::user,
+      home   => $::statping::install_dir,
+      name   => $::statping::user,
     }
-    group { 'example':
+    group { 'statping':
       ensure => present,
-      name   => $::example::group
+      name   => $::statping::group
     }
   }
-  case $::example::install_method {
+  case $::statping::install_method {
     'package': {
-      if $::example::manage_repo {
-        class { 'example::repo': }
-      }
-      package { 'example':
-        ensure => $::example::package_version,
-        name   => $::example::package_name,
+      package { 'statping':
+        ensure => $::statping::package_version,
+        name   => $::statping::package_name,
       }
     }
     'archive': {
-      file { 'example install dir':
+      file { 'statping install dir':
         ensure => directory,
-        group  => $::example::group,
-        owner  => $::example::user,
-        path   => $::example::install_dir,
+        group  => $::statping::group,
+        owner  => $::statping::user,
+        path   => $::statping::install_dir,
       }
-      if $::example::manage_user {
-        File[$::example::install_dir] {
-          require => [Group['example'],User['example']],
+      if $::statping::manage_user {
+        File[$::statping::install_dir] {
+          require => [Group['statping'],User['statping']],
         }
       }
 
-      archive { 'example archive':
+      archive { 'statping archive':
         cleanup      => true,
-        creates      => "${::example::install_dir}/example",
+        creates      => "${::statping::install_dir}/statping",
         extract      => true,
-        extract_path => $::example::install_dir,
-        group        => $::example::group,
-        path         => '/tmp/example.tar.gz',
-        source       => $::example::archive_source,
-        user         => $::example::user,
-        require      => File['example install dir']
+        extract_path => $::statping::install_dir,
+        group        => $::statping::group,
+        path         => '/tmp/statping.tar.gz',
+        source       => $::statping::archive_source,
+        user         => $::statping::user,
+        require      => File['statping install dir']
       }
 
     }
     default: {
-      fail("Installation method ${::example::install_method} not supported")
+      fail("Installation method ${::statping::install_method} not supported")
     }
   }
 }

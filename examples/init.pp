@@ -9,7 +9,7 @@
 # Learn more about module testing here:
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
-class { '::example':
-  archive_source => 'https://github.com/attachmentgenie/golang-example/releases/download/v0.1.2/golang-example_0.1.2_linux_x86_64.tar.gz',
+class { '::statping':
   install_method => 'archive',
+  archive_source => 'https://github.com/statping/statping/releases/download/v0.90.74/statping-linux-amd64.tar.gz',
 }

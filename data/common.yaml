@@ -1,14 +1,18 @@
 ---
-example::group: 'example'
-example::install_dir: '/opt/example'
-example::install_method: 'package'
-example::manage_service: true
-example::manage_user: true
-example::manage_repo: true
-example::package_name: 'example'
-example::package_version: 'present'
-example::service_name: 'example'
-example::service_provider: 'systemd'
-example::service_ensure: 'running'
-example::user: 'example'
+statping::config: {}
+statping::config_dir: '/etc/statping'
+statping::group: 'statping'
+statping::http_addr: '0.0.0.0'
+statping::http_port: 8080
+statping::install_dir: '/usr/local/bin'
+statping::install_method: 'package'
+statping::manage_service: true
+statping::manage_user: true
+statping::manage_repo: true
+statping::package_name: 'statping'
+statping::package_version: 'present'
+statping::service_name: 'statping'
+statping::service_provider: 'systemd'
+statping::service_ensure: 'running'
+statping::user: 'statping'
 ...

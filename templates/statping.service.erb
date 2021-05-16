@@ -1,0 +1,15 @@
+[Unit]
+Description=<%= scope['statping::service_name'] %>
+After=network.target
+After=systemd-user-sessions.service
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+Environment="DB_CONN=sqlite"
+ExecStart=<%= scope['statping::install_dir'] %>/statping -s <%= scope['statping::http_addr'] %> -p <%= scope['statping::http_port'] %>
+WorkingDirectory=<%= scope['statping::install_dir'] %>
+
+[Install]
+WantedBy=multi-user.target

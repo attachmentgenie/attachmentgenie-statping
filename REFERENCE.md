@@ -8,40 +8,40 @@
 
 #### Public Classes
 
-* [`example`](#example): Class to install and configure example.  Use this module to install and configure example.
-* [`example::repo`](#examplerepo): A short summary of the purpose of this class
+* [`statping`](#statping): Class to install and configure statping.  Use this module to install and configure statping.
+* [`statping::repo`](#statpingrepo): A short summary of the purpose of this class
 
 #### Private Classes
 
-* `example::config`: Class to configure example.
-* `example::install`: Class to install example.
-* `example::service`: Class to manage the example service.
+* `statping::config`: Class to configure statping.
+* `statping::install`: Class to install statping.
+* `statping::service`: Class to manage the statping service.
 
 ## Classes
 
-### `example`
+### `statping`
 
-Class to install and configure example.
+Class to install and configure statping.
 
-Use this module to install and configure example.
+Use this module to install and configure statping.
 
-#### Examples
+#### statpings
 
 ##### Declaring the class
 
 ```puppet
-include ::example
+include ::statping
 ```
 
 #### Parameters
 
-The following parameters are available in the `example` class.
+The following parameters are available in the `statping` class.
 
 ##### `archive_source`
 
 Data type: `Optional[Stdlib::HTTPUrl]`
 
-Location of example binary release.
+Location of statping binary release.
 
 Default value: ``undef``
 
@@ -49,37 +49,37 @@ Default value: ``undef``
 
 Data type: `String[1]`
 
-Group that owns example files.
+Group that owns statping files.
 
 ##### `install_dir`
 
 Data type: `Stdlib::Absolutepath`
 
-Location of example binary release.
+Location of statping binary release.
 
 ##### `install_method`
 
 Data type: `Enum['archive','package']`
 
-How to install example.
+How to install statping.
 
 ##### `manage_repo`
 
 Data type: `Boolean`
 
-Manage the example repo.
+Manage the statping repo.
 
 ##### `manage_service`
 
 Data type: `Boolean`
 
-Manage the example service.
+Manage the statping service.
 
 ##### `manage_user`
 
 Data type: `Boolean`
 
-Manage example user and group.
+Manage statping user and group.
 
 ##### `package_name`
 
@@ -91,7 +91,7 @@ Name of package to install.
 
 Data type: `String[1]`
 
-Version of example to install.
+Version of statping to install.
 
 ##### `service_name`
 
@@ -115,17 +115,17 @@ The state of the service.
 
 Data type: `String[1]`
 
-User that owns example files.
+User that owns statping files.
 
-### `example::repo`
+### `statping::repo`
 
 A description of what this class does
 
-#### Examples
+#### statpings
 
 ##### 
 
 ```puppet
-include example::repo
+include statping::repo
 ```
 

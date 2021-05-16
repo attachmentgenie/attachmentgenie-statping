@@ -1,12 +1,12 @@
 # attachmentgenie-statping
 
-[![](https://img.shields.io/puppetforge/pdk-version/attachmentgenie/example.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/example)
-[![](https://img.shields.io/puppetforge/v/attachmentgenie/example.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/example)
-[![](https://img.shields.io/puppetforge/dt/attachmentgenie/example.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/example)
+[![](https://img.shields.io/puppetforge/pdk-version/attachmentgenie/statping.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/statping)
+[![](https://img.shields.io/puppetforge/v/attachmentgenie/statping.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/statping)
+[![](https://img.shields.io/puppetforge/dt/attachmentgenie/statping.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/statping)
 [![](https://travis-ci.org/attachmentgenie/attachmentgenie-statping.svg?branch=master)](https://travis-ci.org/attachmentgenie/attachmentgenie-statping)
 [![License](https://img.shields.io/github/license/attachmentgenie/attachmentgenie-statping?stype=popout)](https://github.com/attachmentgenie/attachmentgenie-statping/blob/master/LICENSE)
 
-Deploy and configure attachmentgenie's example on a node.
+Deploy and configure attachmentgenie's statping on a node.
 
 - [Description](#description)
 - [Usage](#usage)
@@ -22,10 +22,10 @@ This project serves as my starter project
 ## Usage
 
 All options and configuration can be done through interacting with the parameters
-on the main example class.
+on the main statping class.
 These are now documented via [Puppet Strings](https://github.com/puppetlabs/puppet-strings)
 
-You can view example usage in [REFERENCE](REFERENCE.md).
+You can view statping usage in [REFERENCE](REFERENCE.md).
 
 ## Reference
 
