@@ -3,7 +3,7 @@
 [![](https://img.shields.io/puppetforge/pdk-version/attachmentgenie/statping.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/statping)
 [![](https://img.shields.io/puppetforge/v/attachmentgenie/statping.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/statping)
 [![](https://img.shields.io/puppetforge/dt/attachmentgenie/statping.svg?style=popout)](https://forge.puppetlabs.com/attachmentgenie/statping)
-[![](https://travis-ci.org/attachmentgenie/attachmentgenie-statping.svg?branch=master)](https://travis-ci.org/attachmentgenie/attachmentgenie-statping)
+[![Spec Tests](https://github.com/attachmentgenie/attachmentgenie-statping/actions/workflows/spec.yml/badge.svg)](https://github.com/attachmentgenie/attachmentgenie-statping/actions/workflows/spec.yml)
 [![License](https://img.shields.io/github/license/attachmentgenie/attachmentgenie-statping?stype=popout)](https://github.com/attachmentgenie/attachmentgenie-statping/blob/master/LICENSE)
 
 Deploy and configure statping on a node.
@@ -25,7 +25,7 @@ All options and configuration can be done through interacting with the parameter
 on the main statping class.
 These are now documented via [Puppet Strings](https://github.com/puppetlabs/puppet-strings)
 
-You can view statping usage in [REFERENCE](REFERENCE.md).
+You can view example usage in [REFERENCE](REFERENCE.md).
 
 ## Reference
 
