@@ -9,7 +9,6 @@
 #### Public Classes
 
 * [`statping`](#statping): Class to install and configure statping.  Use this module to install and configure statping.
-* [`statping::repo`](#statpingrepo): A short summary of the purpose of this class
 
 #### Private Classes
 
@@ -19,25 +18,34 @@
 
 ## Classes
 
-### `statping`
+### <a name="statping"></a>`statping`
 
 Class to install and configure statping.
 
 Use this module to install and configure statping.
 
-#### statpings
-
-##### Declaring the class
-
-```puppet
-include ::statping
-```
-
 #### Parameters
 
-The following parameters are available in the `statping` class.
+The following parameters are available in the `statping` class:
 
-##### `archive_source`
+* [`archive_source`](#archive_source)
+* [`group`](#group)
+* [`install_dir`](#install_dir)
+* [`install_method`](#install_method)
+* [`manage_service`](#manage_service)
+* [`manage_user`](#manage_user)
+* [`package_name`](#package_name)
+* [`package_version`](#package_version)
+* [`service_name`](#service_name)
+* [`service_provider`](#service_provider)
+* [`service_ensure`](#service_ensure)
+* [`user`](#user)
+* [`config`](#config)
+* [`config_dir`](#config_dir)
+* [`http_addr`](#http_addr)
+* [`http_port`](#http_port)
+
+##### <a name="archive_source"></a>`archive_source`
 
 Data type: `Optional[Stdlib::HTTPUrl]`
 
@@ -45,87 +53,93 @@ Location of statping binary release.
 
 Default value: ``undef``
 
-##### `group`
+##### <a name="group"></a>`group`
 
 Data type: `String[1]`
 
 Group that owns statping files.
 
-##### `install_dir`
+##### <a name="install_dir"></a>`install_dir`
 
 Data type: `Stdlib::Absolutepath`
 
 Location of statping binary release.
 
-##### `install_method`
+##### <a name="install_method"></a>`install_method`
 
 Data type: `Enum['archive','package']`
 
 How to install statping.
 
-##### `manage_repo`
-
-Data type: `Boolean`
-
-Manage the statping repo.
-
-##### `manage_service`
+##### <a name="manage_service"></a>`manage_service`
 
 Data type: `Boolean`
 
 Manage the statping service.
 
-##### `manage_user`
+##### <a name="manage_user"></a>`manage_user`
 
 Data type: `Boolean`
 
 Manage statping user and group.
 
-##### `package_name`
+##### <a name="package_name"></a>`package_name`
 
 Data type: `String[1]`
 
 Name of package to install.
 
-##### `package_version`
+##### <a name="package_version"></a>`package_version`
 
 Data type: `String[1]`
 
 Version of statping to install.
 
-##### `service_name`
+##### <a name="service_name"></a>`service_name`
 
 Data type: `String[1]`
 
 Name of service to manage.
 
-##### `service_provider`
+##### <a name="service_provider"></a>`service_provider`
 
 Data type: `String[1]`
 
 Init system that is used.
 
-##### `service_ensure`
+##### <a name="service_ensure"></a>`service_ensure`
 
 Data type: `Enum['running','stopped']`
 
 The state of the service.
 
-##### `user`
+##### <a name="user"></a>`user`
 
 Data type: `String[1]`
 
 User that owns statping files.
 
-### `statping::repo`
+##### <a name="config"></a>`config`
 
-A description of what this class does
+Data type: `Hash`
 
-#### statpings
 
-##### 
 
-```puppet
-include statping::repo
-```
+##### <a name="config_dir"></a>`config_dir`
+
+Data type: `Stdlib::Absolutepath`
+
+
+
+##### <a name="http_addr"></a>`http_addr`
+
+Data type: `String`
+
+
+
+##### <a name="http_port"></a>`http_port`
+
+Data type: `Stdlib::Port`
+
+
 
