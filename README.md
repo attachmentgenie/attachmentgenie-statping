@@ -6,7 +6,7 @@
 [![](https://travis-ci.org/attachmentgenie/attachmentgenie-statping.svg?branch=master)](https://travis-ci.org/attachmentgenie/attachmentgenie-statping)
 [![License](https://img.shields.io/github/license/attachmentgenie/attachmentgenie-statping?stype=popout)](https://github.com/attachmentgenie/attachmentgenie-statping/blob/master/LICENSE)
 
-Deploy and configure attachmentgenie's statping on a node.
+Deploy and configure statping on a node.
 
 - [Description](#description)
 - [Usage](#usage)
